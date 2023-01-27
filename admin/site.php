@@ -6,7 +6,7 @@
         
         //lista rdx1
         public function ListarRdx1(){
-            $sql = "SELECT * FROM rdx1 INNER JOIN membro ON rdx1.idMembro = membro.id ORDER BY pontuacaoRdx1 DESC";
+            $sql = "SELECT * FROM rdx1 INNER JOIN membro ON rdx1.idMembro = membro.idMembro ORDER BY pontuacaoRdx1 DESC";
             $conexao = Conexao::LigarConexao();
             $conexao->exec("SET NAMES utf8");
 
@@ -17,7 +17,7 @@
 
         //lista mvp
         public function ListarMvp(){
-            $sql = "SELECT * FROM mvp INNER JOIN membro ON mvp.idMembro = membro.id ORDER BY mvpJg DESC";
+            $sql = "SELECT * FROM mvp INNER JOIN membro ON mvp.idMembro = membro.idMembro ORDER BY mvpJg DESC";
             $conexao = Conexao::LigarConexao();
             $conexao->exec("SET NAMES utf8");
 
@@ -28,7 +28,7 @@
 
         //lista dogTag
         public function ListarDogtag(){
-            $sql = "SELECT * FROM dogtag INNER JOIN membro ON dogtag.idMembro = membro.id ORDER BY totalDgt DESC";
+            $sql = "SELECT * FROM dogtag INNER JOIN membro ON dogtag.idMembro = membro.idMembro ORDER BY totalDgt DESC";
             $conexao = Conexao::LigarConexao();
             $conexao->exec("SET NAMES utf8");
 
