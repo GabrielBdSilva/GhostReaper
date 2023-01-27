@@ -1,6 +1,6 @@
-function vizualizar(pagina){
-    document.body.setAttribute('page',pagina);
-}
+// function vizualizar(pagina){
+//     document.body.setAttribute('page',pagina);
+// }
 
 
   // menu mobile 
@@ -13,7 +13,5 @@ function vizualizar(pagina){
   
   }
 
-var id= 3
+var id= 3;
  
-    
-    

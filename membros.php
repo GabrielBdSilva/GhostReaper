@@ -7,6 +7,8 @@
 
     if(!array_key_exists($pagina, $listarMembro)){
         $pagina = 0;
+        
+        
     }
     foreach(array_slice($listarMembro,$pagina,1)  as $linha):
 ?>        
@@ -14,13 +16,14 @@
 
 <body>
 
-<h3>PERFIL</h3>
+<!--pf membro -->
+
     <div class="PF-MEMBROS">
 
-        
+        <h3>PERFIL</h3>
         <div>        
                 <div class="pf-membro">
-                    <img src=<?php echo $linha['fotoMembro'] ?> alt="player1">
+                    <img  src=<?php echo $linha['fotoMembro'] ?> alt="player1" id ="btPF">
                     <h1><?php echo $linha['nickMembro']?></h1>
                     <img src=<?php echo $linha['pttMembro']?> alt="Patente">
                 </div>        
@@ -29,14 +32,13 @@
                         <li><a href="#"><img src="img/icon/iconfacebook.svg" alt=""></a></li>
                         <li><a href="#"><img src="img/icon/iconinstagram.svg" alt=""></a></li>
                         <li><a href="#"><img src="img/icon/iconyoutube.svg" alt=""></a></li>
-                        <li><a href="#"><img src="img/icon/twitter.png" alt=""></a></li>
+                        <li><a href="#"><img src="img/icon/icontwitter.svg" alt=""></a></li>
                     </ul>
                   
         </div>
         
     
     </div>
-
 
 <h3>MEMBROS</h3>
 
@@ -46,13 +48,7 @@
 
 <?php $id += 1 ?>
 
-
-
-<?php foreach ($listarMembro as $key => $value){
-        echo '<a href="?page='.$key.'"></a>';
-    }
-?>
-<!--fim teste -->
+<!--fim pf membro -->
 
         
         <div  class="membro">
@@ -89,5 +85,5 @@
         </div>
          
 <?php endforeach ?>
-
+<script type="text/javascript" src="js/botao.js"></script>
 </body>
